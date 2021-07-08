@@ -11,21 +11,20 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content:space-between;
-    background-color: #f26257;
+    background-color: #f39549;
     border: 1px solid black;
 }
 
-h2 {
+.frase-do-header {
     display: flex;
-    justify-content: center;
-    font-size:3vw;
+    justify-content:space-evenly;
+    font-size:2vw;
 }
 
 .img-header {
     height: 15vh;
-    width: 15vw;
-    margin-left: 10px;
-    border: 1px solid black;
+    width: 18vw;
+    
 }
 
 
@@ -79,8 +78,15 @@ footer{
 
 .texto-do-footer {
     display:flex;
+    align-items: center;
+    justify-content: center;
     color: #cf3b31;
     align-items: center;  
+}
+
+.img-do-footer {
+    width: 10vh;
+    height: 10vh;
 }
 
 #links-do-footer {
