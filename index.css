@@ -30,11 +30,27 @@ header {
 
 button {
     margin-right: 2vh;
-    height: 10vh;
-    width: 15vh;
+    height: 7vh;
+    width: 12vh;
+    background-color: rgb(241, 208, 147);
+    border: 0.5pt solid
 }
 
+button:hover {
+    background-color: #fabf77;
+    cursor: pointer;
+  }
+
 /* MENU NAV */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: #fabf77;
+  }
 
 .menu-superior {
     display: flex;
@@ -43,7 +59,7 @@ button {
     padding-right: 5vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    background-color: lightseagreen;
+    background-color: rgb(241, 208, 147);
 }
 
 /* MAIN */
@@ -52,17 +68,43 @@ main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr;
+    background-color: rgb(240, 219, 181);
+}
+
+p{
+    margin: 3vh;
+}
+
+.box-do-p{
+    border: 1px solid black;
 }
 
 .card-da-main {
-    background-color: #f5a442;
+    background-color: #fabf77;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 10vh;
-    overflow: auto;
+    margin: 5vh;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px lightslategrey;
 }
+
+.imagem-carros {
+    display: flex;
+    justify-content: center;
+    width: 45vh;
+    height: 40vh;
+    border: 1px solid black;
+    margin: 5vh;
+}
+
+#card-carros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
 
 /* FOOTER */
 
@@ -70,17 +112,23 @@ footer{
     display: flex;
     justify-content:space-around;
     padding: 2vh;
-    background-color: lightseagreen;
-    color: #cf3b31;
+    background-color: #f39549;
+    color: black;
     border: 1px solid black;
     align-items: center;
+    
+}
+
+.icones {
+    margin: 7px;
+    
 }
 
 .texto-do-footer {
     display:flex;
     align-items: center;
     justify-content: center;
-    color: #cf3b31;
+    color: black;
     align-items: center;  
 }
 
@@ -96,4 +144,17 @@ footer{
     align-items: center;
     align-items: center;
     grid-column: 1/-1;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (min-device-width:320px) and (max-device-width:480px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #card-carros {
+        grid-template-columns: 1fr;
+        margin: 0vw;
+    }
 }
